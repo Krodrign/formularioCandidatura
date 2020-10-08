@@ -1,0 +1,253 @@
+* {
+    text-decoration: none !important;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+
+.container-fluid {
+    padding-left: 10%;
+    padding-right: 10%; 
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.box {
+    width: 100%;
+    margin-left: 15%;
+    margin-right: 14%;
+    border: solid 1px gray;
+}
+
+.formParteSuperior {
+    border-bottom: solid 1px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+p{
+    text-align: justify;
+}
+
+
+.formDescricao {
+    line-height: 35px;
+}
+
+.formParteInferior .row .col .cinquentaPorcento {
+    width: 48%;
+
+
+}
+
+.pequenaMargin {
+    margin-left: 2%;
+}
+
+.formParteInferior .row .col .cemPorcento {
+    width: 99%;
+}
+
+.optionDesejada {
+    margin-top: 18px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.textRadioResposta {
+    padding-right: 100px;
+}
+
+.textRadioResposta2 {
+    padding-right: 107px;
+}
+
+.campoForm {
+    margin-bottom: 15px;
+
+}
+
+.buttonReferencia {
+    margin-top: 10px;
+    width: 100px;
+}
+
+.buttonEnviar {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.oculto {
+    display: none;
+}
+
+.Vermelho {
+    color: red;
+}
+
+
+.direitoReservados {
+    padding-top: 20px;
+    padding-bottom: 20px;
+text-align: center;
+   font-style: italic;
+}
+#btnCorUm, #btnCorDois{
+    margin-top: 5px;
+}
+
+
+.btn-dark{
+    width: 680px;
+    height: 60px;
+}
+/* SANCKBAR */
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #218838;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+/* ////////////////////////////////// */
+
+#snackbar2 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #C82333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar2.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

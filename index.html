@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="icon" type="imagem/png" href="assets/prancheta.png" />
+        
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário Candidatura de Emprego</title>
+</head>
+
+<body>
+    <section class="container-fluid form">
+        <div class="row box p-3">
+            <div class="col-12 formParteSuperior">
+                <h1>
+                    Formulário de Candidatura de Emprego
+                </h1>
+                <p class="formDescricao">
+                    Obrigado pelo seu interesse em trabalhar conosco.
+                    Por favor, confira abaixo as oportunidades de <br>
+                    trabalho disponíveis, que atendem aos seus critérios e
+                    envie sua candidatura preenchendo o formulário
+                    de candidatura de emprego.
+                </p>
+            </div>
+            <div class="col-12 formParteInferior">
+                <div class="row campoForm">
+                    <div class="col-3">
+                        <label for="">Nome <span class="Vermelho">*</span></label>
+                    </div>
+                    <div class="col">
+                        <input class="cinquentaPorcento" id="txtNome" type="text" placeholder="Nome">
+                        <input class="cinquentaPorcento pequenaMargin" id="txtSobrenome" type="text" placeholder="Sobrenome">
+                    </div>
+                </div>
+                <div class="row campoForm">
+                    <div class="col-3">
+                        <label for="">E-mail <span class="Vermelho">*</span></label>
+                    </div> 
+                    <div class="col">
+                        <input class="cemPorcento" id="txtEmail" type="email" placeholder="email@email.com">
+                    </div>
+                </div>
+                <div class="row campoForm">
+                    <div class="col-3">
+                        <label for="">Qual posição você <br> está se candidatando <br> para?<span
+                                class="Vermelho">*</span></label>
+                    </div>
+                    <div class="col ">
+                        <select class="cemPorcento optionDesejada" name="txtVaga" id="txtVaga">
+                            <option value=""> - Selecione - </option>
+                            <option value="Gestor de mídias sociais">Gestor de mídias sociais</option>
+                            <option value="Engenheiro de cibersegurança">Engenheiro de cibersegurança</option>
+                            <option value="Representante de vendas">Representante de vendas</option>
+                            <option value="Especialista em sucesso do cliente">Especialista em sucesso do cliente</option>
+                            <option value="Cientista de dados">Cientista de dados</option>
+                            <option value="Engenheiro de dados">Engenheiro de dados</option>
+                            <option value="Especialista em Inteligência Artificial">Especialista em Inteligência Artificial</option>
+                            <option value="Desenvolvedor em JavaScript">Desenvolvedor em JavaScript</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row campoForm">
+                    <div class="col-3">
+                        <label for="">Data de início disponível <span class="Vermelho">*</span></label>
+                    </div>
+                    <div class="col">
+                        <input class="cemPorcento" type="date" id="txtData" name="txtData">
+                    </div>
+                </div>
+                <div class="row campoForm">
+                    <div class="col-3">
+                        <label for="">Qual a sua situação atual de emprego? <span class="Vermelho">*</span></label>
+                    </div>
+                    <div class="col radioResposta">
+                        <input type="radio" name="txtEmprego">
+                        <label class="textRadioResposta" for="">Empregado</label>
+                        <input type="radio" name="txtEmprego">
+                        <label class="" for="">Desempregado</label><br>
+                        <input type="radio" name="txtEmprego">
+                        <label class="textRadioResposta2" for="">Autônomo</label>
+                        <input type="radio" name="txtEmprego">
+                        <label for="">Estudante</label>
+                    </div>
+                </div>
+                <div class="row campoForm">
+                    <div class="col-3">
+                        <label for="">Você gostaria de listar referências?</label>
+                    </div>
+                    <div class="col">
+                        <button type="button" onclick="closeReferencia()" class="btn btn-success "
+                            id="btnCorUm">Sim</button>
+                        <button type="button" onclick="openReferencia()" class="btn btn-danger oculto"
+                            id="btnCorDois">Não</button>
+                    </div>
+                </div>
+
+                <div id="refencia" class="oculto">
+                    <div class="row campoForm">
+                        <div class="col-3">
+                            <label for="">Nome</label>
+                        </div>
+                        <div class="col">
+                            <input class="cinquentaPorcento" type="text" id="txtNomeReferencia" placeholder="Nome">
+                            <input class="cinquentaPorcento pequenaMargin" type="text" id="txtSobrenomeReferencia" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                    <div class="row campoForm">
+                        <div class="col-3">
+                            <label for="">E-mail</label>
+                        </div>
+                        <div class="col">
+                            <input class="cemPorcento" type="email" id="txtEmailReferencia" placeholder="email@email.com">
+                        </div>
+                    </div>
+                </div>
+                <div class="row campoForm">
+                    <div class="col-12 buttonEnviar">
+
+                        <button type="button" onclick="enviar()" class="btn btn-dark">Enviar o formulário de candidatura
+                            de emprego</button>
+                        <div id="snackbar">Formulário enviado!</div>
+                        <div id="snackbar2">Por favor preencha <br> todos os campos corretamente!</div>
+                    </div>
+                </div>
+
+        
+            </div>
+
+
+    </section>
+    <div class="direitoReservados">
+        <a> &copy; 2020 Kauan Rodrigues</a>
+    </div>
+</div>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
